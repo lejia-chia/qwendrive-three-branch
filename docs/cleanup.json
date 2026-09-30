@@ -1,0 +1,312 @@
+{
+  "kind": "current_repository_cleanup",
+  "date": "2026-09-30",
+  "deleted": [
+    {
+      "path": "archive",
+      "bytes": 881047874,
+      "files": 444
+    },
+    {
+      "path": "outputs",
+      "bytes": 3705176327,
+      "files": 284
+    },
+    {
+      "path": "scenes",
+      "bytes": 178488956,
+      "files": 6
+    },
+    {
+      "path": "docs",
+      "bytes": 87023,
+      "files": 10
+    },
+    {
+      "path": ".old_src_cleanup",
+      "bytes": 3533444,
+      "files": 185
+    },
+    {
+      "path": ".latest_staging",
+      "bytes": 0,
+      "files": 0
+    },
+    {
+      "path": "run_future_online.sh",
+      "bytes": 10583,
+      "files": 1
+    },
+    {
+      "path": "run_reasoning.sh",
+      "bytes": 4861,
+      "files": 1
+    },
+    {
+      "path": "navsim-devkit",
+      "bytes": 20212706,
+      "files": 220
+    },
+    {
+      "path": "nuplan-devkit",
+      "bytes": 9832045,
+      "files": 1450
+    },
+    {
+      "path": "model/planner-sft",
+      "bytes": 2079740463,
+      "files": 2
+    },
+    {
+      "path": "data/nuplan_maps",
+      "bytes": 0,
+      "files": 1
+    },
+    {
+      "path": "data/navsim_root",
+      "bytes": 0,
+      "files": 0
+    },
+    {
+      "path": "data/navtest_full_backup.yaml",
+      "bytes": 285662,
+      "files": 1
+    },
+    {
+      "path": "data/metric_cache_navtest",
+      "bytes": 3170877099,
+      "files": 12152
+    },
+    {
+      "path": "data/navtrain_pairs",
+      "bytes": 1558902752,
+      "files": 11
+    },
+    {
+      "path": "data/reasoning_labels",
+      "bytes": 194395273,
+      "files": 8
+    },
+    {
+      "path": "data/reasoning_references",
+      "bytes": 216496,
+      "files": 4
+    },
+    {
+      "path": "data/navtrain_native",
+      "bytes": 311122999,
+      "files": 3
+    },
+    {
+      "path": "data/reasoning_t_pred",
+      "bytes": 879243,
+      "files": 5
+    },
+    {
+      "path": "data/traj_candidates",
+      "bytes": 5208965,
+      "files": 3
+    },
+    {
+      "path": "data/traj_bank",
+      "bytes": 60453613,
+      "files": 3
+    },
+    {
+      "path": "data/reason_cache",
+      "bytes": 78545584,
+      "files": 6
+    },
+    {
+      "path": "data/q_targets/v0",
+      "bytes": 4985093,
+      "files": 6
+    },
+    {
+      "path": "data/q_targets/v1",
+      "bytes": 4984303,
+      "files": 6
+    },
+    {
+      "path": "data/q_targets/README.md",
+      "bytes": 2169,
+      "files": 1
+    }
+  ],
+  "deleted_bytes": 12268993533,
+  "deleted_file_count": 14813,
+  "first_party_python_files": 26,
+  "cpu_checks": {
+    "passed": 31,
+    "total": 31
+  },
+  "single_gpu_checks": {
+    "same_planning_kv_objects": true,
+    "same_planning_anchor_object": true,
+    "no_connector_parameters": true,
+    "text_gradient_routing": true,
+    "text_frozen_zero_grad": true,
+    "reason_kl_gradient_routing": true,
+    "reason_kl_frozen_zero_grad": true,
+    "future_shared_kv_gradient": true,
+    "future_gradient_routing": true,
+    "future_frozen_zero_grad": true,
+    "planning_shared_kv_gradient": true,
+    "planning_gradient_routing": true,
+    "planning_does_not_train_future_head": true,
+    "planning_frozen_zero_grad": true,
+    "one_vlm_forward": true,
+    "future_native_shape": true,
+    "gt_teacher_stop_gradient": true
+  },
+  "single_gpu_peak_gib": 30.12199592590332,
+  "joint_pool": {
+    "train": 598,
+    "diagnostic_val": 99
+  },
+  "full_native_split": {
+    "train": 90975,
+    "val": 11160
+  },
+  "same_scene_semantics_checked": 8,
+  "official_source_tracked_diff": "",
+  "q_v2_manifest_sha256": "feb40eefcb783c8aebe322ed1f9ad7489f2307631907c0ec9c78cf626d25ab97",
+  "direct_future_planning_connection": false,
+  "formal_training_started": false,
+  "external_openscene_deleted": false,
+  "post_cleanup_verified": true,
+  "first_party_code_sha256": {
+    "src/__init__.py": "cefd929756f02de4ee8a7d70bf276307f4191d6a83968811f653f5746b1d8a61",
+    "src/data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/data/dataset.py": "a1d80f569eba3316b95902d1c484e3fe739d3d722274e7b406264eb7be13ba90",
+    "src/data/q_targets.py": "2d04532c14ef4e5b48e99e442a26ff403d14cae29f8119ed40a1ca3d10dd99db",
+    "src/data/reason_text.py": "f7fb6b819d1c5cfa7a7c42f7a006dc6654e4656956a3ab1e056069c4fee374d1",
+    "src/data/scene.py": "dfdb989b82c7231f1c0104d3b5ed485e415ab8f0055cbc4678fb4731b0509ac4",
+    "src/model/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/model/future/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/model/future/branch.py": "b439c310d8d3accca57e29be0322d166624b2bb9b4ec11233c7fe92057bc45a4",
+    "src/model/future/targets.py": "d84204c371b06e36aa7f0c43da4a7cf0d765fe20e97564f1faf9c63cdc59d7da",
+    "src/model/joint.py": "bcbaf22ba8e229ea39274e9b0ab7d3f15177f42f534b10456b4972651faea7e8",
+    "src/model/planning/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/model/planning/branch.py": "6839421ef9ee3975c53493ac5ee0fcf138430615f4fd8df3302a519453a878f5",
+    "src/model/reasoning/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/model/reasoning/scoring.py": "2e869ffb2514a8b707e94d5e0e0aef452de6e19647d6cb9c5e8d02abf8324ea7",
+    "src/model/shared/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/model/shared/forward.py": "0b1536cd9d535b8cad44aa46ab80f835693da4ed213dc41232c48261c4d406aa",
+    "src/model/shared/kv_export.py": "2353d7f45464ea2b1ab44ee54ccaf925ea7043159a0dd68b1c91f7e39d3f98c1",
+    "src/model/shared/lora.py": "de44c427a2d51e8de54d7c42440ca3c88e71405a36628c756273e09c3591d597",
+    "src/training/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/training/checkpoint.py": "8f3239bba4db23fcf5b0de4147f3a5c3cc252f314a3ebb3c99f2a5d9138edc8e",
+    "src/training/runtime.py": "c31bc06f37e6d10f485e69be41e973a3e77d54e2814b6941cc591e93bd6cd545",
+    "src/training/trainer.py": "cd2b81b223394b48253104b30fc0bfe70ac5b6084b64ae36e2d37f89137da9ca",
+    "src/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/utils/hashing.py": "ca90f9ee743017823c02546b60a208d05b70a26f3fd5d6e0b25166079b0124b7",
+    "src/utils/paths.py": "b5375383c7938e701b65c9ed9ed3acbfa9c0df890aeebdea3e6d99541fb7896c"
+  },
+  "final_loss_gradients": {
+    "text": {
+      "vlm_lora": {
+        "tensors": 64,
+        "with_grad": 64,
+        "nonzero": 32,
+        "finite": true
+      },
+      "reason_head": {
+        "tensors": 12,
+        "with_grad": 0,
+        "nonzero": 0,
+        "finite": true
+      },
+      "future": {
+        "tensors": 55,
+        "with_grad": 0,
+        "nonzero": 0,
+        "finite": true
+      },
+      "planner": {
+        "tensors": 358,
+        "with_grad": 0,
+        "nonzero": 0,
+        "finite": true
+      }
+    },
+    "reason_kl": {
+      "vlm_lora": {
+        "tensors": 64,
+        "with_grad": 64,
+        "nonzero": 32,
+        "finite": true
+      },
+      "reason_head": {
+        "tensors": 12,
+        "with_grad": 12,
+        "nonzero": 12,
+        "finite": true
+      },
+      "future": {
+        "tensors": 55,
+        "with_grad": 0,
+        "nonzero": 0,
+        "finite": true
+      },
+      "planner": {
+        "tensors": 358,
+        "with_grad": 0,
+        "nonzero": 0,
+        "finite": true
+      }
+    },
+    "future": {
+      "vlm_lora": {
+        "tensors": 64,
+        "with_grad": 60,
+        "nonzero": 30,
+        "finite": true
+      },
+      "reason_head": {
+        "tensors": 12,
+        "with_grad": 0,
+        "nonzero": 0,
+        "finite": true
+      },
+      "future": {
+        "tensors": 55,
+        "with_grad": 55,
+        "nonzero": 55,
+        "finite": true
+      },
+      "planner": {
+        "tensors": 358,
+        "with_grad": 0,
+        "nonzero": 0,
+        "finite": true
+      }
+    },
+    "planning": {
+      "vlm_lora": {
+        "tensors": 64,
+        "with_grad": 60,
+        "nonzero": 30,
+        "finite": true
+      },
+      "reason_head": {
+        "tensors": 12,
+        "with_grad": 0,
+        "nonzero": 0,
+        "finite": true
+      },
+      "future": {
+        "tensors": 55,
+        "with_grad": 0,
+        "nonzero": 0,
+        "finite": true
+      },
+      "planner": {
+        "tensors": 358,
+        "with_grad": 358,
+        "nonzero": 358,
+        "finite": true
+      }
+    }
+  }
+}
